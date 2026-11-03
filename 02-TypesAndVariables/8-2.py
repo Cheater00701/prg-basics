@@ -1,0 +1,15 @@
+###
+# Calculation of circle area and circumference 
+#
+
+# determine radius and PI values
+# calculate area 
+# calculate circumference 
+# print results
+
+radius = float(input('Enter circle radius: '))
+pi = 3.14
+area = pi * radius ** 2
+circumference = 2 * pi * radius
+print(f'Circle area: {area}')
+print(f'Circle circumference: {circumference}')
