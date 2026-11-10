@@ -18,7 +18,6 @@ def day_name(day_number):
         result = 'Saturday'
     elif day_number == 7:
         result = 'Sunday'
-    ...
     return result
 
 # Function usage
