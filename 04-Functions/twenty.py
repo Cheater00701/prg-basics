@@ -1,15 +1,21 @@
-def f(b):
-    def prime(n):
-        if n < 2:
-            return False
-        for i in range(2, n):
-            if n % i == 0:
-                return False
-        return True
-    c = 0
-    n = 1
-    while c < n:
-        n += 1
-        if prime(n):
-            c += 1
-    return n
+def f(n):
+    prime_numbers = ''
+    curr_number = 2
+    found = 0
+
+    while found < n:
+        is_prime = True
+        divisor = 2
+        while divisor < curr_number:
+            if curr_number % divisor == 0:
+                is_prime = False
+                break
+            divisor += 1
+
+        if is_prime:
+            prime_numbers = prime_numbers + ' ' + str(curr_number)
+            found += 1
+
+        curr_number += 1
+
+    return prime_numbers.strip().split()[-1]
