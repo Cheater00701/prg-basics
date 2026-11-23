@@ -1,10 +1,10 @@
 def f(detector):
     people = 0
-    for n in range(len(detector)):
-        if detector[n] == '+':
+    for n in detector:
+        if n == '+':
             people += 1
-        elif detector[n] == '-':
+            if people == 3:
+                return True
+        elif n == '-':
             people -= 1
-        if people == 3:
-            return True
     return False

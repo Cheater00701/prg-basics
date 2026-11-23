@@ -1,9 +1,9 @@
 def f(n):
-    num1 = 1
-    num2 = 0
-    num3 = 0
+    val1 = 0
+    val2 = 1
+    result = 0
     for i in range(n - 2):
-        num3 = num2
-        num2 = num1
-        num1 = num2 + num3
-    return num1
+        result = val1 + val2
+        val1 = val2
+        val2 = result
+    return result

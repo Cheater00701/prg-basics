@@ -1,2 +1,2 @@
 import twenty
-print(twenty.f(5))
+print(twenty.f(int(input())))

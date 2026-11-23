@@ -1,10 +1,3 @@
-#def f(number):
-#    i = 0
-#    k = 0
-#    for i in str(number):
-#        if str(number).count(str(i)) > 1:
-#            k = k + str(number).count(str(i))
-#    return k
 def f(number):
     number = str(number)
     sum = 0
